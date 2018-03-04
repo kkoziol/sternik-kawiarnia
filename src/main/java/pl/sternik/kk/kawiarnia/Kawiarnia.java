@@ -39,10 +39,10 @@ public abstract class Kawiarnia {
         System.out.println(cos);
         System.out.println(cos3);
 		
-//		System.out.println("------- Template Metod -----");
-//		Ekspres ekspres = new EkspresCzekolada();
-//		Napoj napoj = ekspres.dajNapoj();
-//		System.out.println(napoj);
+		System.out.println("------- Template Metod -----");
+		Ekspres ekspres = new EkspresCzekolada();
+		Napoj napoj = ekspres.dajNapoj();
+		System.out.println(napoj);
 
 	}
 
