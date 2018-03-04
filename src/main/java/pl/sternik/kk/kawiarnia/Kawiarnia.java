@@ -2,6 +2,7 @@ package pl.sternik.kk.kawiarnia;
 
 import pl.sternik.kk.kawiarnia.dekoratory.BitaSmietana;
 import pl.sternik.kk.kawiarnia.dekoratory.Cukier;
+import pl.sternik.kk.kawiarnia.dekoratory.DodatkiTypy;
 import pl.sternik.kk.kawiarnia.ekspres.Ekspres;
 import pl.sternik.kk.kawiarnia.ekspres.EkspresCzekolada;
 import pl.sternik.kk.kawiarnia.napoje.Czekolada;
@@ -30,7 +31,13 @@ public abstract class Kawiarnia {
         czekolada = new BitaSmietana(czekolada);
         System.out.println(kawa);
         
+        System.out.println("----- Kawiarnia z enuma -----");
+        Napoj cos = new Kawa();
+        Napoj cos2 = DodatkiTypy.Mleko.dodaj(cos);
+        Napoj cos3 = DodatkiTypy.Cukier.dodaj(cos2);
         
+        System.out.println(cos);
+        System.out.println(cos3);
 		
 //		System.out.println("------- Template Metod -----");
 //		Ekspres ekspres = new EkspresCzekolada();
